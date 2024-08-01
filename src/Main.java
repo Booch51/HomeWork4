@@ -24,7 +24,7 @@ public class Main {
         System.out.println("Задача 2");
 
         byte airTemperature = 6;
-        if (airTemperature <= 5) {
+        if (airTemperature < 5) {
             System.out.println("На улице " + airTemperature + " градусов, нужно надеть шапку.");
         } else {
             System.out.println("На улице " + airTemperature + " градусов, можно идти без шапки.");
@@ -44,14 +44,11 @@ public class Main {
         byte agePerson = 12;
         if (agePerson >= 2 && agePerson <= 6) {
             System.out.println("Если возраст человека равен " + agePerson + ", то ему нужно ходить в детский сад.");
-        }
-        if (agePerson >=7 && agePerson <= 17) {
+        } else if (agePerson >=7 && agePerson <= 17) {
             System.out.println("Если возраст человека равен " + agePerson + ", то ему нужно ходить в школу.");
-        }
-        if (agePerson >=18 && agePerson <= 24) {
+        } else if (agePerson >=18 && agePerson <= 24) {
             System.out.println("Если возраст человека равен " + agePerson + ", то его место в университете.");
-        }
-        if (agePerson >24) {
+        } else if (agePerson >24) {
             System.out.println("Если возраст человека равен " + agePerson + ", то ему пора ходить на работу.");
         }
 
